@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assessment Prediction</title>
+</head>
+<body>
+    <h1>Enter Information for Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="age">Age :</label>
+        <input type="number" id="age" name="Age" step="0.01" required><br>
+
+        <label for="bmi">BMI :</label>
+        <input type="number" id="bmi" name="BMI" step="0.01" required><br>
+
+        <label for="smoking">Smoking (Yes = 1, No = 0):</label>
+        <select id="smoking" name="Smoking">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="alcohol">Alcohol Consumption:</label>
+        <input type="number" id="alcohol" name="AlcoholConsumption" step="0.01" required><br>
+
+        <label for="physicalActivity">Physical Activity (normalized):</label>
+        <input type="number" id="physicalActivity" name="PhysicalActivity" step="0.01" required><br>
+
+        <label for="diet">Diet Quality (normalized):</label>
+        <input type="number" id="diet" name="DietQuality" step="0.01" required><br>
+
+        <label for="sleepQuality">Sleep Quality (normalized):</label>
+        <input type="number" id="sleepQuality" name="SleepQuality" step="0.01" required><br>
+
+        <label for="familyHistory">Family History of Alzheimer’s (Yes = 1, No = 0):</label>
+        <select id="familyHistory" name="FamilyHistoryAlzheimers">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="cardiovascularDisease">Cardiovascular Disease (Yes = 1, No = 0):</label>
+        <select id="cardiovascularDisease" name="CardiovascularDisease">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="diabetes">Diabetes (Yes = 1, No = 0):</label>
+        <select id="diabetes" name="Diabetes">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="depression">Depression (Yes = 1, No = 0):</label>
+        <select id="depression" name="Depression">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="headInjury">Head Injury (Yes = 1, No = 0):</label>
+        <select id="headInjury" name="HeadInjury">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="hypertension">Hypertension (Yes = 1, No = 0):</label>
+        <select id="hypertension" name="Hypertension">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+
+        <label for="memoryComplaints">Memory Complaints (Yes = 1, No = 0):</label>
+        <select id="memoryComplaints" name="MemoryComplaints">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="behavioralProblems">Behavioral Problems (Yes = 1, No = 0):</label>
+        <select id="behavioralProblems" name="BehavioralProblems">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+
+        <label for="confusion">Confusion (Yes = 1, No = 0):</label>
+        <select id="confusion" name="Confusion">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="disorientation">Disorientation (Yes = 1, No = 0):</label>
+        <select id="disorientation" name="Disorientation">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="personalityChanges">Personality Changes (Yes = 1, No = 0):</label>
+        <select id="personalityChanges" name="PersonalityChanges">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="difficultyCompletingTasks">Difficulty Completing Tasks (Yes = 1, No = 0):</label>
+        <select id="difficultyCompletingTasks" name="DifficultyCompletingTasks">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="forgetfulness">Forgetfulness (Yes = 1, No = 0):</label>
+        <select id="forgetfulness" name="Forgetfulness">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <input type="submit" value="Submit for Prediction">
+    </form>
+</body>
+</html>
